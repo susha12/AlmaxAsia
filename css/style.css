@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://ffonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -341,8 +341,33 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: space-between;
-
+position: relative;
 }
+.Project_box__cheked.active{
+    animation: ProjectCheked 2s forwards;
+}
+
+@keyframes ProjectCheked{
+from { top: 150px;
+    opacity: 0;
+}
+to {top: 0px;
+    opacity: 1;
+}
+}
+
+.Project_box__cheked.close{
+animation: ProjectChekedClose 2s forwards;
+}
+
+@keyframes ProjectChekedClose{
+from { top: 0px;
+    opacity: 1; }
+to {top: 150px;
+    opacity: 0;}
+}
+
+
 .box_cheked__one{
     display: flex;
     justify-content: start;
@@ -390,7 +415,34 @@ justify-content: space-between;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
 }
+
+.transportation_section.active{
+    animation: transportationSection 2s forwards;
+}
+
+@keyframes transportationSection {
+from { right: 150px;
+    opacity: 0;
+}
+to {right: 0px;
+    opacity: 1;
+}
+}
+
+.transportation_section.close{
+animation: transportationSectionClose 2s forwards;
+}
+
+@keyframes transportationSectionClose{
+from { right: 0px;
+    opacity: 1; }
+to {right: 150px;
+    opacity: 0;}
+}
+
+
 .transportation_section__one{
     height: 154px;
     width: 294px;
