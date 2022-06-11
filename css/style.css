@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+}
+
+/* вес саит  */
+.main_content{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+/* шапка сайта */
+header{
+    max-height: 971px;
+    /* max-height: 1182px; */
+    /* height: auto; */
+    border: 2px solid gold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    overflow: hidden;
+    padding-top: 121px;
+}
+
+header.active{
+    animation: header 1s forwards;
+}
+
+@keyframes header{
+    from {  max-height: 971px;}
+  to {max-height: 1182px;}
+}
+
+header.close{
+    animation: headerClose 1s forwards;
+}
+
+@keyframes headerClose{
+    from { max-height: 1182px; }
+  to {max-height: 971px;}
+}
+
+.header_background{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    z-index: -100;
+}
+
+
+.header_box{
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    left: 0;
+    top: 0;
+    /* border: 1px solid white; */
+}
+.nav_bar{
+    width: 100%;
+    max-width: 1118px;
+    padding: 0 15px;
+    height: 121px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.logo{
+    /* height: 76px; */
+    width: 129px;
+}
+.nav_list{
+    height: 44px;
+    width: calc(100% - 166px);
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 37px;
+
+
+}
+.nav_list>li{
+    list-style-type: none;
+    max-width: 153px;
+    padding: 2px 5px;
+    /* border: 2px solid red; */
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+cursor: pointer;
+}
+.nav_list>li>a{
+    color: white;
+    text-decoration: none;
+}
+.li_btn{
+
+background: rgba(203, 57, 57, 1);
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+justify-content: center;
+display: flex;
+align-items: center;
+color: rgba(255, 255, 255, 1);
+height: 44px;
+min-width: 166px;
+border-radius: 10px;
+}
+.nav_burger{
+    display: none;
+}
+
+/* header_title */
+.header_title{
+    top: 241px;
+    height: 226px;
+    width: 100%;
+    /* border: 2px solid red; */
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+h1{
+    height: 122px;
+    width: 809px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+
+
+}
+.header_title__btns{
+    display: flex;
+}
+.header_btn__one{
+    height: 44px;
+    width: 166px;
+    border-radius: 10px;
+    background: rgba(203, 57, 57, 1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color:  rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+    cursor: pointer;
+
+}
+.header_btn__two{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color:  rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgba(203, 57, 57, 1);
+    height: 44px;
+    width: 166px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+/* Transport and services */
+.Transport_box{
+    top: 661px;
+    height: 305px; 
+    width: 100%;
+    /* border: 2px solid red; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+}
+.Transport_services{
+    height: 100%;
+    width: 100%;
+    max-width: 1148px;
+    padding: 0 20px;
+    /* border: 2px solid gold; */
+}
+.Transport_services__title{
+    height: 46px;
+    width: 408px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+
+}
+.Transport_text{
+
+}
+.Transport_text__one{
+    height: 54px;
+    width: 451px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+        
+}
+.Transport_textImg_close{
+    /* height: 200px; */
+    display: flex;
+    /* border: 2px solid rgb(7, 255, 73); */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    overflow: hidden;
+    height: 0px;
+}
+.Transport_textImg_close.active{
+    animation: headerBig 1s forwards;
+    /* animation-fill-mode: ; */
+}
+@keyframes headerBig{
+    from { height: 0px;}
+  to {height: 200px;}
+}
+
+.Transport_textImg_close.close{
+    animation: TransportTextImgClose 1s forwards;
+}
+
+@keyframes TransportTextImgClose{
+    from { height: 200px; }
+  to {height: 0px;}
+}
+
+
+.Transport_text__two{
+    height: 192px;
+    width: 446px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* border: 2px solid rgb(7, 255, 73); */
+    
+
+
+}
+.Transport_img{
+    height: 266px;
+    width: 451px;
+    border-radius: 20px;
+
+}
+.btnTransport_close{
+    height: 44px;
+    width: 166px;
+    border-radius: 10px;
+    border: 2px solid rgba(203, 57, 57, 1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 30px;
+}
+/* <div class="Transport_box">
+    <div class="Transport_services">
+        <h2 class="Transport_services__title">Транспорт и услуги</h2>
+        <div class="Transport_text">
+            <p class="Transport_text__one">Корпоративные клиенты получат гарантию качества услуг.</p>
+            <div class="Transport_textImg_close">
+                <p class="Transport_text__two">Almax Asia предоставляет Клиентам доставку груза всеми видами транспорта, такими как автомобильный, железнодорожный, морской и воздушный, а также комбинированные схемы доставок. Выбор зависит от вида груза и места назначения, а также от требований к срокам доставки.</p>
+                <img src="img/TransportServices.png" alt="TransportServices.png" class="Transport_img">
+            </div>
+            <div class="btnTransport_close">Подробнее</div>
+        </div>
+    </div>
+</div> */
