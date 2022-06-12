@@ -18,7 +18,9 @@ btnTransportClose.onclick = () => {
         header.classList.remove("active");
     }
 }
-
+TransportTextImgClose.onclick = ()=>{
+    Visible(element);
+}
 // animation two block
 // Получаем нужный элемент
 const element = document.querySelector('.Project_box__cheked');
@@ -125,6 +127,7 @@ btnCloseBlock.onclick = () => {
     SolutionsBoxContent.classList.remove("active");
     SolutionsBoxBackground.classList.remove("active");
     oneRightBtn.classList.remove("active");
+    VisibleThree(TestEquipmentContainer);
 }
 
 // Test equipment box
