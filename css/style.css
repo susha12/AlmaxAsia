@@ -1084,7 +1084,6 @@ footer {
 .footer_container__right {
     width: 541px;
     height: 301px;
-    /* border: 2px solid red;  */
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1822,13 +1821,12 @@ footer {
 
     /* шапка сайта */
     header {
-        max-height: 771px;
+        min-height: 741px;
         padding-top: 80px;
     }
-
     @keyframes header {
         from {
-            min-height: 771px;
+            min-height: 741px;
         }
 
         to {
@@ -1842,7 +1840,7 @@ footer {
         }
 
         to {
-            min-height: 771px;
+            min-height: 741px;
         }
     }
 
@@ -1962,6 +1960,9 @@ footer {
     .nav_list>li>a:hover {
         color: rgba(203, 57, 57, 1);
     }
+    .li_btn>a.btn:hover{
+        color: white;
+    }
 
     /* header_title */
     .header_title {
@@ -2020,7 +2021,7 @@ footer {
     }
 
     .Transport_textImg_close.active {
-        animation: headerBig 1s forwards;
+        animation: headerBig 1.3s forwards;
     }
 
     @keyframes headerBig {
@@ -2034,7 +2035,7 @@ footer {
     }
 
     .Transport_textImg_close.close {
-        animation: TransportTextImgClose 1s forwards;
+        animation: TransportTextImgClose 0.8s forwards;
     }
 
     @keyframes TransportTextImgClose {
@@ -2228,7 +2229,6 @@ footer {
     .Industry_Solutions__box {
         width: 100%;
         max-height: 388px;
-        border: 2px solid rgb(0, 240, 0);
     }
 
     @keyframes Industrysolutionsbox {
@@ -2237,17 +2237,17 @@ footer {
         }
 
         to {
-            min-height: 1610px;
+            max-height: 1610px;
         }
     }
 
     @keyframes IndustrysolutionsboxClose {
         from {
-            min-height: 1610px;
+            max-height: 1610px;
         }
 
         to {
-            min-height: 388px;
+            max-height: 388px;
         }
     }
 
@@ -2268,7 +2268,6 @@ footer {
         position: relative;
         width: 1440px;
         max-height: 388px;
-        border: 2px solid rgb(240, 0, 0);
     }
 
     @keyframes SolutionsBoxBackground {
@@ -2277,17 +2276,17 @@ footer {
         }
 
         to {
-            min-height: 1610px;
+            max-height: 1610px;
         }
     }
 
     @keyframes SolutionsBoxBackgroundClose {
         from {
-            min-height: 1610px;
+            max-height: 1610px;
         }
 
         to {
-            min-height: 388px;
+            max-height: 388px;
         }
     }
 
@@ -2305,17 +2304,17 @@ footer {
         }
 
         to {
-            min-height: 1610px;
+            max-height: 1610px;
         }
     }
 
     @keyframes SolutionsBoxContentClose {
         from {
-            min-height: 1610px;
+            max-height: 1610px;
         }
 
         to {
-            min-height: 388px;
+            max-height: 388px;
         }
     }
 
@@ -2413,7 +2412,6 @@ footer {
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
-        border: 2px solid rgb(255, 0, 0);
         width: 90%;
         position: relative;
         left: 0px;
@@ -2423,7 +2421,7 @@ footer {
         height: 24px;
         width: 41px;
         top: 0px;
-        right: 10px;
+        right: 20px;
     }
 
     .two_left__img.active {
@@ -2441,7 +2439,6 @@ footer {
         font-size: 12px;
         font-weight: 300;
         line-height: 16px;
-        border: 2px solid red;
         margin-top: 10px;
     }
 
@@ -2459,9 +2456,9 @@ footer {
     .content_two__right {
         width: 100%;
         height: 50%;
-        border: 2px solid rgb(43, 255, 0);
         justify-content: flex-start;
         align-items: center;
+        margin: 10px;
     }
 
     /* .Test equipment box */
@@ -2544,6 +2541,7 @@ footer {
     }
 
     .quipment_colump__title {
+        padding-top: 8px;
         height: 48px;
         width: 254px;
         font-size: 16px;
@@ -2674,6 +2672,7 @@ footer {
         width: 100%;
         height: 48%;
         padding-top: 20px;
+
     }
 
     .footer_right__title {
@@ -2705,10 +2704,11 @@ footer {
         font-weight: 600;
         line-height: 22px;
         letter-spacing: 0em;
+        margin: 0 auto;
     }
 
     .btn_close_block {
-        margin-top: 10px;
+        margin-top: -59px;
     }
 
 }
