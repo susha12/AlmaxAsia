@@ -65,7 +65,6 @@ window.addEventListener('scroll', function() {
 Visible(element);
 const elementTwo = document.querySelector('.transportation_section');
 const transportationFooterTitle = document.querySelector('.transportation_footer__title');
-
 let VisibleTwo = function(target) {
     // Все позиции элемента
     var targetPosition = {
@@ -89,21 +88,16 @@ let VisibleTwo = function(target) {
         elementTwo.classList.remove("close");
         elementTwo.classList.add("active");
         transportationFooterTitle.style.display = "flex";
-
     } else {
         elementTwo.classList.remove("active");
         elementTwo.classList.add("close");
         transportationFooterTitle.style.display = "none";
-
     };
 };
-
 window.addEventListener('scroll', function() {
     VisibleTwo(elementTwo);
 });
-
 VisibleTwo(elementTwo);
-
 // Industry Solutions box three
 const oneRightBtn = document.querySelector(".one_right__btn");
 const btnCloseBlock = document.querySelector(".btn_close_block");
@@ -134,7 +128,6 @@ btnCloseBlock.onclick = () => {
 }
 
 // Test equipment box
-
 const TestEquipmentContainer = document.querySelector('.Test_equipment__container');
 let VisibleThree = function(target) {
     // Все позиции элемента
@@ -163,9 +156,27 @@ let VisibleThree = function(target) {
         TestEquipmentContainer.classList.add("close");
     };
 };
-
 window.addEventListener('scroll', function() {
     VisibleThree(TestEquipmentContainer);
 });
-
 VisibleThree(TestEquipmentContainer);
+
+// burger animation
+const burgerImg = document.querySelector(".burger_img");
+const burgerImgClose = document.querySelector(".burger_img__close");
+const navList = document.querySelector(".nav_list");
+
+burgerImg.onclick = () => {
+    console.log("yes")
+    navList.classList.add("active");
+    navList.classList.remove("close");
+    burgerImg.style.display = "none";
+    burgerImgClose.style.display = "flex";
+}
+
+burgerImgClose.onclick = () => {
+    navList.classList.add("close");
+    navList.classList.remove("active");
+    burgerImgClose.style.display = "none";
+    burgerImg.style.display = "flex";
+}
