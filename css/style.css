@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 }
 
 /* вес саит  */
@@ -24,11 +24,12 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
+    overflow: hidden;
 }
 
 /* шапка сайта */
 header {
-    max-height: 971px;
+    min-height: 971px;
     /* max-height: 1182px; */
     /* height: auto; */
     /* border: 2px solid gold; */
@@ -48,11 +49,11 @@ header.active {
 
 @keyframes header {
     from {
-        max-height: 971px;
+        min-height: 971px;
     }
 
     to {
-        max-height: 1182px;
+        min-height: 1182px;
     }
 }
 
@@ -62,19 +63,20 @@ header.close {
 
 @keyframes headerClose {
     from {
-        max-height: 1182px;
+        min-height: 1182px;
     }
 
     to {
-        max-height: 971px;
+        min-height: 971px;
     }
 }
 
 .header_background {
-    position: relative;
+    position: absolute;
     left: 0;
-    width: 100%;
-    height: 100% !important;
+    top: 0;
+    width: 1440px;
+    min-height: 1220px;
     z-index: -100;
 }
 
@@ -98,8 +100,7 @@ header.close {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 }
 
 .logo {
@@ -110,7 +111,7 @@ header.close {
 .nav_list {
     height: 44px;
     width: calc(100% - 166px);
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,7 +124,7 @@ header.close {
     list-style-type: none;
     max-width: 153px;
     padding: 2px 5px;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -162,7 +163,7 @@ header.close {
     top: 241px;
     height: 226px;
     width: 100%;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     position: absolute;
     color: white;
     display: flex;
@@ -230,7 +231,7 @@ h1 {
     top: 661px;
     height: 305px;
     width: 100%;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     position: absolute;
     display: flex;
     justify-content: center;
@@ -355,7 +356,7 @@ h1 {
     height: 1102px;
     max-width: 1440px;
     width: 100%;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     background: rgba(250, 251, 255, 1);
     display: flex;
     flex-direction: column;
@@ -376,7 +377,7 @@ h1 {
 }
 
 .Project_box__cheked {
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     height: 410px;
     width: 926px;
     display: flex;
@@ -423,7 +424,7 @@ h1 {
     display: flex;
     justify-content: start;
     align-items: center;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 }
 
 .box_cheked__img {
@@ -441,7 +442,7 @@ h1 {
     text-align: left;
     color: rgba(43, 43, 43, 1);
     margin-left: 34.7px;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     display: flex;
     align-items: center;
 
@@ -449,7 +450,7 @@ h1 {
 
 /* box Transportation  */
 .box_transportation {
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     margin: 70px auto;
     height: 263px;
     max-width: 1116px;
@@ -560,7 +561,7 @@ h1 {
 } */
 /* Industry Solutions box three */
 .Industry_Solutions__box {
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     max-width: 1440px;
     width: 100%;
     /* max-height: 1537px; */
@@ -607,7 +608,7 @@ h1 {
 
 .Solutions_box__background {
     position: relative;
-    width: 100%;
+    width: 1440px;
     max-height: 563px;
 
 }
@@ -912,10 +913,11 @@ h1 {
     align-items: flex-start;
     max-width: 1440px;
     width: 100%;
+    overflow: hidden;
     box-shadow: 0px 7px 18px 0px rgba(255, 255, 255, 0.25);
     height: 794px;
     background: #FAFBFF;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 }
 
 .Test_equipment__title {
@@ -926,7 +928,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 }
 
 .Test_equipment__titleOne {
@@ -941,7 +943,7 @@ h1 {
 
 .Test_equipment__text {
     color: rgba(42, 42, 42, 1);
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     height: 48px;
     width: 736px;
     font-size: 20px;
@@ -960,7 +962,7 @@ h1 {
     max-width: 1166px;
     width: 100%;
     height: 690px;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     padding: 0 25px;
     margin: 0 auto;
     position: relative;
@@ -1007,14 +1009,14 @@ h1 {
     align-items: flex-start;
     width: 261px;
     height: 497px;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 }
 
 .equipment_colump__img {
     height: 173px;
     max-width: 261px;
     border-radius: 20px;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 
 }
 
@@ -1026,7 +1028,7 @@ h1 {
     line-height: 34px;
     letter-spacing: 0em;
     text-align: left;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 
 }
 
@@ -1038,10 +1040,7 @@ h1 {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-
-    /* border: 2px solid red; */
-
-
+    /* border: 2px solid red;  */
 }
 
 .quipment_colump__btn {
@@ -1068,6 +1067,7 @@ footer {
     max-width: 1440px;
     width: 100%;
     position: relative;
+    overflow: hidden;
     /* border: 2px solid rgb(255, 0, 0); */
     /* display: flex;
     align-items: center;
@@ -1076,7 +1076,7 @@ footer {
 
 .footer_background {
     height: 100%;
-    width: 100%
+    max-width: 1440px;
 }
 
 .footer_container {
@@ -1127,7 +1127,7 @@ footer {
 .footer_left__phoneOne {
     width: 246px;
     height: 27px;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 }
 
 .phoneOne {
@@ -1196,7 +1196,7 @@ footer {
 .footer_container__right {
     width: 541px;
     height: 301px;
-    /* border: 2px solid red; */
+    /* border: 2px solid red;  */
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1238,3 +1238,697 @@ footer {
     line-height: 22px;
     letter-spacing: 0em;
 }
+
+
+@media only screen and (max-width: 1065px) {
+
+    /* шапка сайта */
+    header {
+        min-height: 867px;
+        padding-top: 121px;
+
+    }
+
+    @keyframes header {
+        from {
+            min-height: 867px;
+        }
+
+        to {
+            min-height: 1052px;
+        }
+    }
+
+    @keyframes headerClose {
+        from {
+            min-height: 1052px;
+        }
+
+        to {
+            min-height: 867px;
+        }
+    }
+
+    /* вес саит  */
+    .main_content {
+        max-width: 1065px;
+    }
+
+    .logo {
+        /* height: 76px; */
+        width: 109px;
+    }
+
+    .nav_list>li {
+        max-width: 103px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .li_btn {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        min-width: 116px;
+    }
+
+    h1 {
+        height: 112px;
+        width: 609px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 41px;
+    }
+
+    .header_btn__one {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 116px;
+    }
+
+    .header_btn__two {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 116px;
+    }
+
+    /* Transport and services */
+    .Transport_box {
+        top: 561px;
+    }
+
+    .Transport_services {
+        height: 100%;
+        width: 100%;
+        max-width: 1148px;
+        padding: 0 20px;
+
+    }
+
+    .Transport_services__title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0em;
+    }
+
+    .Transport_text__one {
+        height: 34px;
+        width: 291px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .Transport_text__two {
+        height: 152px;
+        width: 306px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .Transport_img {
+        width: 351px;
+    }
+
+    .btnTransport_close {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 116px;
+    }
+
+
+    /* Project logistics */
+    .box_Project__logistics {
+        height: 1102px;
+        max-width: 1440px;
+        width: 100%;
+        background: rgba(250, 251, 255, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+    }
+
+    .Project_title {
+        width: 359px;
+        margin: 40px auto;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .Project_box__cheked {
+        width: 726px;
+    }
+
+    @keyframes ProjectCheked {
+        from {
+            top: 100px;
+            opacity: 0;
+        }
+
+        to {
+            top: 0px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes ProjectChekedClose {
+        from {
+            top: 0px;
+            opacity: 1;
+        }
+
+        to {
+            top: 100px;
+            opacity: 0;
+        }
+    }
+
+    .box_cheked__img {
+        height: 31.6px;
+        width: 31.6px;
+    }
+
+    .box_cheked__one {
+        height: 68px;
+        max-width: 722px;
+    }
+
+    .box_cheked__text {
+        padding: 0 10px;
+        height: 68px;
+        max-width: 846px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-left: 18.7px;
+    }
+
+    /* Project logistics */
+    .box_Project__logistics {
+        height: 1002px;
+    }
+
+    /* box Transportation  */
+
+    .box_transportation {
+        margin: 50px auto;
+        height: 263px;
+        max-width: 1116px;
+        width: 100%;
+        padding: 5px 20px;
+    }
+
+    .transportation_title {
+        height: 40px;
+        width: 167px;
+        margin: 0px auto 53px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .transportation_section {
+        padding: 0px 10px;
+        /* max-width: 770px;  */
+    }
+
+    @keyframes transportationSection {
+        from {
+            right: 100px;
+            opacity: 0;
+        }
+
+        to {
+            right: 0px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes transportationSectionClose {
+        from {
+            right: 0px;
+            opacity: 1;
+        }
+
+        to {
+            right: 100px;
+            opacity: 0;
+        }
+    }
+
+
+    .transportation_section__one {
+        height: 124px;
+        width: 204px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .transportation_section__img.one {
+        height: 35px;
+        width: 50px;
+    }
+
+    .transportation_section__img.two {
+        height: 44.4px;
+        width: 50px;
+    }
+
+    .transportation_section__img.three {
+        height: 50px;
+        width: 44px;
+    }
+
+    .transportation_section__text {
+        height: 34px;
+        width: 134px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .transportation_footer__title {
+        height: 66px;
+        max-width: 703px;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        margin: 60px auto 60px;
+    }
+
+    /* Industry Solutions box three */
+    .Industry_Solutions__box {
+        max-width: 1440px;
+        width: 100%;
+        max-height: 453px;
+    }
+
+    @keyframes Industrysolutionsbox {
+        from {
+            max-height: 453px;
+        }
+
+        to {
+            max-height: 1150px;
+        }
+    }
+
+    @keyframes IndustrysolutionsboxClose {
+        from {
+            min-height: 1150px;
+        }
+
+        to {
+            min-height: 453px;
+        }
+    }
+
+    .Solutions_box__background {
+        position: relative;
+        width: 1440px;
+        max-height: 453px;
+    }
+
+    @keyframes SolutionsBoxBackground {
+        from {
+            max-height: 453px;
+        }
+
+        to {
+            max-height: 1150px;
+        }
+    }
+
+    @keyframes SolutionsBoxBackgroundClose {
+        from {
+            min-height: 1150px;
+        }
+
+        to {
+            min-height: 453px;
+        }
+    }
+
+    .Solutions_box__content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        max-height: 453px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    @keyframes SolutionsBoxContent {
+        from {
+            max-height: 563px;
+        }
+
+        to {
+            max-height: 1150px;
+        }
+    }
+
+    @keyframes SolutionsBoxContentClose {
+        from {
+            min-height: 1150px;
+        }
+
+        to {
+            min-height: 563px;
+        }
+    }
+
+    .box_content__one {
+        height: 250px;
+        margin: 101px 15px;
+    }
+
+    .content_one__left {
+        max-width: 43%;
+    }
+
+    .content_one__img {
+        height: 180px;
+        max-width: 281px;
+        width: 100%;
+    }
+
+    .content_one__right {
+        max-width: 57%;
+        color: rgba(255, 255, 255, 1);
+        margin-left: 10px;
+    }
+
+    .one_right__title {
+        margin-top: 52px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .one_right__text {
+        height: 108px;
+        max-width: 446px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+
+    .one_right__btn {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 116px;
+    }
+
+
+    .box_content__two {
+        padding: 0 10px;
+        height: 570px;
+        margin: 0px 25px;
+    }
+
+    .content_two__left {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .two_left__one {
+        position: relative;
+        width: 351px;
+        height: auto;
+    }
+
+    .two_left__one.active {
+        padding-top: 40px;
+    }
+
+    .two_left__one.activeone {
+        padding-top: 70px;
+    }
+
+    .two_left__title {
+        height: 24px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        width: 250px;
+        left: -10px;
+        margin-bottom: 20px;
+    }
+
+    .two_left__img {
+        height: 30px;
+        width: 41px;
+    }
+
+    .two_left__img.active {
+        top: 40px;
+    }
+
+    .two_left__img.activeone {
+        top: 70px;
+    }
+
+    .two_left__text {
+        width: 351px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+
+    .two_left__text::before {
+        left: -10px;
+    }
+
+    .content_two__right {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .btn_close_block {
+        margin-top: 29px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 116px;
+    }
+
+    /* .Test equipment box */
+    .Test_equipment {
+        height: 794px;
+    }
+
+    .Test_equipment__title {
+        margin: 39px auto;
+        min-height: 114px;
+        width: 736px;
+    }
+
+    .Test_equipment__titleOne {
+        height: 36px;
+        width: 533px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .Test_equipment__text {
+        max-width: 606px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .Test_equipment__container {
+        height: 450px;
+    }
+
+    @keyframes TestEquipmentContainer {
+        from {
+            right: -100px;
+            opacity: 0;
+        }
+
+        to {
+            right: 0px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes TestEquipmentContainerClose {
+        from {
+            right: 0px;
+            opacity: 1;
+        }
+
+        to {
+            right: -100px;
+            opacity: 0;
+        }
+    }
+
+    .Test_equipment_colump {
+        width: 201px;
+        height: 427px;
+    }
+
+    .equipment_colump__img {
+        height: auto;
+        max-width: 201px;
+    }
+
+    .quipment_colump__title {
+        height: 70px;
+        width: 201px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .quipment_colump__text {
+        height: 88px;
+        width: 201px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .quipment_colump__btn {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 116px;
+        background: rgba(203, 57, 57, 1);
+    }
+
+    /* footer box */
+    footer {
+        height: 381px;
+    }
+
+    .footer_container__absolute {
+        padding: 0 15px;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .footer_container__left {
+        height: 281px;
+    }
+
+    .footer_left__title {
+        height: 61px;
+        display: flex;
+        align-items: center;
+        width: 262px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .footer_left__phoneOne {
+        width: 206px;
+        height: 27px;
+    }
+
+    .phoneOne {
+        height: 19px;
+        width: 19px;
+        margin-right: 10px;
+    }
+
+    .phoneNumber {
+        height: 20px;
+        width: 186px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .IconLocation {
+        height: auto;
+        width: 16.3px;
+        margin-right: 14px;
+    }
+
+    .location_text {
+        height: 24px;
+        width: 221px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .mail {
+        height: auto;
+        width: 25.6px;
+    }
+
+    .mail_text>a {
+        height: 27px;
+        width: 246px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .footer_container__right {
+        max-width: 335px;
+        height: 201px;
+    }
+
+    .footer_right__title {
+        height: 61px;
+        width: 331px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 41px;
+    }
+
+    .footer_right__text {
+        width: 251px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+
+    .footer_right__btn {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 116px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {}
