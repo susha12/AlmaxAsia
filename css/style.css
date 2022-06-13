@@ -82,7 +82,7 @@ body {
 }
 .box_Contact__text{
     height: 78px;
-    width: 498px;
+    width: 578px;
     font-size: 32px;
     font-weight: 500;
     line-height: 39px;
@@ -184,9 +184,10 @@ body {
     font-weight: 500;
     line-height: 39px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: rgba(43, 43, 43, 1);
-    margin: 10px 0 35px;
+    margin: 20px 0 35px;
+
 }
 .send_content_btnHome{
     height: 44px;
@@ -267,7 +268,7 @@ header.close {
     width: 100%;
     max-width: 1440px;
     padding: 0 15px;
-    height: 121px;
+    /* height: 121px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -275,7 +276,32 @@ header.close {
     position: fixed;
     background: black;
     z-index: 100000;
+    animation: startMenuClose 0.5s forwards;
 }
+.nav_bar:hover{
+
+animation: startMenu 0.5s forwards;
+}
+
+@keyframes startMenu {
+    from {
+        height: 80px;
+    }
+
+    to {
+        height: 121px;
+    }
+}
+@keyframes startMenuClose {
+    from {
+        height: 121px;
+    }
+
+    to {
+        height: 80px;
+    }
+}
+
 
 .logo {
     width: 129px;
@@ -917,7 +943,7 @@ h1 {
 }
 
 .two_left__one.active {
-    padding-top: 50px;
+    padding-top: 55px;
 }
 
 .two_left__one.activeone {
@@ -1316,7 +1342,8 @@ footer {
     position: absolute;
     width: 300px;
     height: 170px; 
-    bottom: 0px;
+    bottom: -90px;
+    left: 35%;
     display: flex;
     display: flex;
     border-top: 1px solid rgba(87, 91, 111, 0.5);
@@ -2017,7 +2044,7 @@ footer {
     }
 
     .footer__alux{
-        bottom: -50px;
+        /* bottom: -50px; */
     }
     .footer__alux>p{
         margin-right: 15px;
@@ -2192,8 +2219,12 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+        animation: startMenuClo 0.5s forwards;
+}
+.nav_bar:hover{
 
+animation: startMe 0.5s forwards;
+}
     .logo {
         z-index: 10000;
         width: 80px;
@@ -3048,5 +3079,7 @@ footer {
     .footer__alux{
         height: 45px; 
         bottom: 0px;
+        bottom: -5px;
+        left: 10%;
     }
 }
