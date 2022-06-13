@@ -10,7 +10,7 @@ headerBtnTwo.onclick = () => {sendForms()};
 
 function sendForms(){
     ContactSection.style.display = "flex";
-    mainContent.style.height = "100vh";
+    mainContent.style.height = "100.1vh";
 }
 
 const closeBtn = document.querySelector(".close_btn");
