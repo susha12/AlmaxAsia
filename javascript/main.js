@@ -1,3 +1,57 @@
+// форма отправки
+const btn = document.querySelector(".li_btn");
+const headerBtnTwo = document.querySelector(".header_btn__two");
+const footerRightBtn = document.querySelector(".footer_right__btn");
+const ContactSection = document.querySelector(".Contact_section");
+
+btn.onclick = () => {sendForms()};
+footerRightBtn.onclick = () => {sendForms()};
+headerBtnTwo.onclick = () => {sendForms()};
+
+function sendForms(){
+    ContactSection.style.display = "flex";
+    mainContent.style.height = "100vh";
+}
+
+const closeBtn = document.querySelector(".close_btn");
+closeBtn.onclick = ()=>{
+    ContactSection.style.display = "none";
+    writheContents.style.display = "flex";
+    writheContents.style.flexDirection = "column";
+    sendContents.style.display = "none";
+    lname.value = "";
+    mainContent.style.height = "auto";
+}
+
+const btnSend = document.querySelector(".btn_send");
+const writheContents = document.querySelector(".writhe_contents");
+const sendContents = document.querySelector(".send_contents");
+
+btnSend.onclick = ()=>{
+    writheContents.style.display = "none";
+    sendContents.style.display = "flex";
+}
+
+
+const sendContentBtnHome = document.querySelector(".send_content_btnHome");
+
+sendContentBtnHome.onclick = ()=>{
+    ContactSection.style.display = "none";
+    writheContents.style.display = "flex";
+    writheContents.style.flexDirection = "column";
+    sendContents.style.display = "none";
+    lname.value = "";
+    mainContent.style.height = "auto";
+}
+
+const lname = document.querySelector("#lname");
+
+lname.onclick = ()=>{
+    lname.value = "+7";
+}
+const mainContent = document.querySelector(".main_content");
+
+
 // header 
 const btnTransportClose = document.querySelector(".btnTransport_close");
 const TransportTextImgClose = document.querySelector(".Transport_textImg_close");
