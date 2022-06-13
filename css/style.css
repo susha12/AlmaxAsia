@@ -39,12 +39,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10000;
+    z-index: 10000000;
     display: none;
 }
 .box_Contact{
-    height: 448px;
-    max-width: 926px;
+    height: 400px;
+    max-width: 800px;
     width: 100%;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.9);
@@ -82,7 +82,7 @@ body {
 }
 .box_Contact__text{
     height: 78px;
-    width: 472px;
+    width: 498px;
     font-size: 32px;
     font-weight: 500;
     line-height: 39px;
@@ -265,13 +265,16 @@ header.close {
 
 .nav_bar {
     width: 100%;
-    max-width: 1118px;
+    max-width: 1440px;
     padding: 0 15px;
     height: 121px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    background: black;
+    z-index: 100000;
 }
 
 .logo {
@@ -942,7 +945,7 @@ h1 {
     display: inline;
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: -20px;
 }
 
 .two_left__img.active {
@@ -1785,6 +1788,7 @@ footer {
     .two_left__img {
         height: 30px;
         width: 41px;
+        right: 0px;
     }
 
     .two_left__img.active {
