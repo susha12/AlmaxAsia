@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     background-color: #000608;
@@ -23,6 +25,185 @@ body {
     flex-direction: column;
     height: auto;
     overflow: hidden;
+}
+
+/* форма отправки */
+.Contact_section{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    display: none;
+}
+.box_Contact{
+    height: 448px;
+    max-width: 926px;
+    width: 100%;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(40px);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.close_btn{
+    position: absolute;
+    top: 41px;
+    right: 41px;
+    cursor: pointer;
+    z-index: 10000000;
+}
+.box_Contact__content{
+    max-height: 307px;
+    width: 736px;
+    margin: 0 20px;
+}
+.writhe_contents{
+    margin: 0 20px;
+}
+.box_Contact__title{
+    height: 61px;
+    width: 442px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(43, 43, 43, 1);
+}
+.box_Contact__text{
+    height: 78px;
+    width: 472px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(43, 43, 43, 1);
+    margin: 10px 0 35px;
+}
+.box_Contact__inputs{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.inputs>form{
+    width: 356px;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#fname{
+    height: 44px;
+    width: 356px;
+    left: 95px;
+    top: 333px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(43, 43, 43, 1);
+    padding: 7px 14px;
+    border: none;
+}
+#lname{
+    height: 44px;
+    width: 356px;
+    left: 95px;
+    top: 333px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(43, 43, 43, 1);
+    padding: 7px 14px;
+    border: none;
+}
+.btn_send{
+    height: 44px;
+    width: 261px;
+    border-radius: 10px;
+    background: rgba(203, 57, 57, 1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.send_contents{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.send_content__title{
+    height: 61px;
+    width: 384px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(43, 43, 43, 1);
+}
+.send_content_text{
+    height: 39px;
+    width: 580px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(43, 43, 43, 1);
+    margin: 10px 0 35px;
+}
+.send_content_btnHome{
+    height: 44px;
+    width: 261px;
+    border-radius: 10px;
+    border: 2px solid rgba(203, 57, 57, 1);
+    min-height: 22px;
+    min-width: 216px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(203, 57, 57, 1);
+    cursor: pointer;
 }
 
 /* шапка сайта */
@@ -171,6 +352,7 @@ h1 {
 }
 
 .header_btn__one {
+    text-decoration: none;
     height: 44px;
     width: 166px;
     border-radius: 10px;
@@ -202,6 +384,7 @@ h1 {
     width: 166px;
     margin: 0 12px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Transport and services */
@@ -735,7 +918,7 @@ h1 {
 }
 
 .two_left__one.activeone {
-    padding-top: 100px;
+    padding-top: 49px;
 }
 
 .two_left__title {
@@ -767,7 +950,7 @@ h1 {
 }
 
 .two_left__img.activeone {
-    top: 100px;
+    top: 47px;
 }
 
 .two_left__text {
@@ -1124,6 +1307,25 @@ footer {
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0em;
+}
+
+.footer__alux{
+    position: absolute;
+    width: 300px;
+    height: 170px; 
+    bottom: 0px;
+    display: flex;
+    display: flex;
+    border-top: 1px solid rgba(87, 91, 111, 0.5);
+    margin-top: 50px;
+}
+.footer__alux>p{
+    margin: 10px;
+    font-size: 15px;
+    line-height: 17px;
+}
+.footer__alux>a>img{
+    width: 150px;
 }
 
 @media only screen and (max-width: 1065px) {
@@ -1567,7 +1769,7 @@ footer {
     }
 
     .two_left__one.activeone {
-        padding-top: 70px;
+        padding-top: 41px;
     }
 
     .two_left__title {
@@ -1590,7 +1792,7 @@ footer {
     }
 
     .two_left__img.activeone {
-        top: 70px;
+        top: 43px;
     }
 
     .two_left__text {
@@ -1806,10 +2008,19 @@ footer {
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
-        max-width: 116px;
+        max-width: 155px;
+        margin-top: 15px;
     }
 
+    .footer__alux{
+        bottom: -50px;
+    }
+    .footer__alux>p{
+        margin-right: 15px;
+        font-size: 14px;
+    }
 }
+
 
 @media only screen and (max-width: 802px) {
 
@@ -1818,6 +2029,125 @@ footer {
         max-width: 390px;
         width: 100%;
     }
+/* форма отправки */
+.Contact_section{
+    max-width: 390px;
+    margin: 0 auto;
+}
+.box_Contact{
+    height: 448px;
+    max-width: 926px;
+    width: 100%;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(40px);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.close_btn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.box_Contact__content{
+    min-height: 307px;
+    width: 100%;
+    margin: 0 10px;
+}
+.writhe_contents{
+    margin: 0;
+}
+.box_Contact__title{
+    height: 31px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 31px;
+    text-align: center;
+}
+.box_Contact__text{
+    height: 68px;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(43, 43, 43, 1);
+    margin: 10px auto 25px;
+}
+.box_Contact__inputs{
+    display: flex;
+    justify-content: start;
+    position: relative;
+    height: 173px;
+}
+.inputs>form{
+    width: 100%;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#fname{
+    height: 40px;
+    width: 306px;
+    font-size: 14px;
+    font-weight: 400;
+}
+#lname{
+    height: 40px;
+    width: 306px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.btn_send{
+    height: 40px;
+    width: 201px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    right: 65px;
+    bottom: 0px;
+}
+
+.send_contents{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.send_content__title{
+    height: 51px;
+    width: 95%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.send_content_text{
+    height: 69px;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin: 20px 0 25px;
+}
+.send_content_btnHome{
+    height: 40px;
+    width: 201px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 
     /* шапка сайта */
     header {
@@ -1940,7 +2270,7 @@ footer {
     .burger_img__close {
         position: absolute;
         display: flex;
-        z-index: 100000;
+        z-index: 100;
         display: none;
         left: -45px;
         top: 0px;
@@ -2711,4 +3041,8 @@ footer {
         margin-top: -59px;
     }
 
+    .footer__alux{
+        height: 45px; 
+        bottom: 0px;
+    }
 }
