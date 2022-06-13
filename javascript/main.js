@@ -285,7 +285,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
         e.preventDefault();
         let href = this.getAttribute('href').substring(1);
         const scrollTarget = document.getElementById(href);
-        const topOffset = 121; // если не нужен отступ сверху 
+        const topOffset = 80; // если не нужен отступ сверху 
         const elementPosition = scrollTarget.getBoundingClientRect().top;
         const offsetPosition = elementPosition - topOffset;
 
