@@ -231,12 +231,21 @@ burgerImg.onclick = () => {
     burgerImgClose.style.display = "flex";
 }
 
-burgerImgClose.onclick = () => {
+// Close burger bar
+function CloseBurger (){
     navList.classList.add("close");
     navList.classList.remove("active");
     burgerImgClose.style.display = "none";
     burgerImg.style.display = "flex";
 }
+
+const home = document.querySelector(".home").onclick = () => {CloseBurger ()}
+const AboutCompanOne = document.querySelector(".AboutCompanyOne").onclick = () => {CloseBurger ()}
+const Equipment = document.querySelector(".Equipment").onclick = () => {CloseBurger ()}
+const AboutCompanyTwo = document.querySelector(".AboutCompanyTwo").onclick = () => {CloseBurger ()}
+const IndustrySolutions = document.querySelector(".IndustrySolutions").onclick = () => {CloseBurger ()}
+burgerImgClose.onclick = () => {CloseBurger ()}
+
 
 
 
