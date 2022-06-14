@@ -1338,26 +1338,33 @@ footer {
     letter-spacing: 0em;
 }
 
+
+
 .footer__alux{
     position: absolute;
-    width: 300px;
-    height: 170px; 
-    bottom: -90px;
-    left: 35%;
+    width: 240px;
+    height: 22px; 
+    bottom: 40.5px;
+    right: 162px;
     display: flex;
     display: flex;
     border-top: 1px solid rgba(87, 91, 111, 0.5);
     margin-top: 50px;
+
 }
 .footer__alux>p{
-    margin: 10px;
-    font-size: 15px;
-    line-height: 17px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 22px;
+    width: 138px;
+    margin-right: 10px;
 }
 .footer__alux>a>img{
-    margin-top: 10px;
-    margin-left: 4px;
-    width: 70px;
+    height: 21px;
+    width: 77px;
 }
 
 @media only screen and (max-width: 1065px) {
@@ -3079,16 +3086,7 @@ animation: startMe 0.5s forwards;
     }
 
     .footer__alux{
-        height: 45px; 
-        bottom: 0px;
-        bottom: -5px;
-        left: 10%;
+        bottom: 15px;
+        right: 90px;
     }
 }
-
-
-
-
-
-
-
