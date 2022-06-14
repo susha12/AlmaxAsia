@@ -11,6 +11,7 @@ html{
 }
 body {
     width: 100%;
+    background-color: #000608;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1169,6 +1170,7 @@ h1 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background: rgba(203, 57, 57, 1);
 }
 
 /* footer box */
@@ -1365,7 +1367,22 @@ footer {
     height: 21px;
     width: 77px;
 }
+/* hover efects color red */
+.nav_list>li>a:hover,
+.header_btn__two:hover,
+.btnTransport_close:hover,
+.btn_close_block:hover {
+    color: rgba(203, 57, 57, 1);
+}
 
+.li_btn>a.btn:hover,
+.header_btn__one:hover,
+.one_right__btn:hover,
+.footer_right__btn:hover,
+.quipment_colump__btn:hover{
+    text-shadow: 3px 3px 3px rgba(0,0,0,1);
+    color: white;
+}
 @media only screen and (max-width: 1065px) {
 
     /* шапка сайта */
@@ -1437,6 +1454,7 @@ footer {
         font-weight: 400;
         line-height: 18px;
         max-width: 116px;
+        margin: 0 6px;
     }
 
     /* Transport and services */
@@ -2062,7 +2080,6 @@ footer {
 
 
 @media only screen and (max-width: 802px) {
-
     /* вес саит  */
     .main_content {
         max-width: 390px;
@@ -2330,16 +2347,14 @@ animation: startMe 0.5s forwards;
         text-decoration: none;
     }
 
-    .nav_list>li>a:hover {
-        color: rgba(203, 57, 57, 1);
-    }
+
     .li_btn>a.btn:hover{
         color: white;
     }
 
     /* header_title */
     .header_title {
-        top: 201px;
+        top: 170px;
         height: 186px;
         width: 100%;
     }
@@ -2349,7 +2364,7 @@ animation: startMe 0.5s forwards;
         width: 90%;
         font-size: 30px;
         font-weight: 600;
-        line-height: 31px;
+        line-height: 28px;
         color: rgba(255, 255, 255, 1);
     }
 
@@ -2904,7 +2919,7 @@ animation: startMe 0.5s forwards;
     .Test_equipment_colump {
         align-items: center;
         width: 261px;
-        height: 327px;
+        height: 299px;
         margin: 15px 0;
     }
 
@@ -2934,7 +2949,7 @@ animation: startMe 0.5s forwards;
     }
 
     .quipment_colump__btn {
-        min-height: 44px;
+        /* min-height: 44px;
         min-width: 166px;
         border-radius: 10px;
         font-size: 16px;
@@ -2945,7 +2960,8 @@ animation: startMe 0.5s forwards;
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
+        cursor: pointer;  */
+        display: none;
     }
 
     /* footer box */
@@ -3095,10 +3111,5 @@ animation: startMe 0.5s forwards;
     }
 
 }
-
-
-
-
-
 
 
