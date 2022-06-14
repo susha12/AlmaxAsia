@@ -3086,7 +3086,20 @@ animation: startMe 0.5s forwards;
     }
 
     .footer__alux{
-        bottom: 15px;
-        right: 90px;
+        bottom: 20px;
+        right: 18%;
     }
+    .footer__alux>p{
+        margin-right: 10px;
+        font-size: 14px;
+        width: 113px;
+    }
+
 }
+
+
+
+
+
+
+
