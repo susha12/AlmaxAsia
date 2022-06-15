@@ -2362,7 +2362,7 @@ animation: startMe 0.5s forwards;
 
     h1 {
         height: 102px;
-        max-width: 300px;
+        min-width: 300px;
         width: 90%;
         font-size: 30px;
         font-weight: 600;
