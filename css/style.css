@@ -11,7 +11,7 @@ html{
 }
 body {
     width: 100%;
-    background-color: #000608;
+    /* background-color: #000608; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1128,7 +1128,7 @@ h1 {
     justify-content: space-between;
     align-items: flex-start;
     width: 261px;
-    height: 497px;
+    height: 487px;
 }
 
 .equipment_colump__img {
@@ -1149,7 +1149,7 @@ h1 {
 
 .quipment_colump__text {
     height: 88px;
-    width: 261px;
+    width: 305px;
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
@@ -1375,12 +1375,14 @@ footer {
     color: rgba(203, 57, 57, 1);
 }
 
-.li_btn>a.btn:hover,
+.li_btn:hover,
 .header_btn__one:hover,
 .one_right__btn:hover,
 .footer_right__btn:hover,
 .quipment_colump__btn:hover{
-    text-shadow: 3px 3px 3px rgba(0,0,0,1);
+    background-color: rgb(92, 16, 16);
+}
+.li_btn>a.btn:hover{
     color: white;
 }
 @media only screen and (max-width: 1065px) {
@@ -2919,7 +2921,7 @@ animation: startMe 0.5s forwards;
     .Test_equipment_colump {
         align-items: center;
         width: 261px;
-        height: 299px;
+        height: 316px;
         margin: 15px 0;
     }
 
@@ -2949,7 +2951,7 @@ animation: startMe 0.5s forwards;
     }
 
     .quipment_colump__btn {
-        /* min-height: 44px;
+        min-height: 44px;
         min-width: 166px;
         border-radius: 10px;
         font-size: 16px;
@@ -2960,8 +2962,8 @@ animation: startMe 0.5s forwards;
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;  */
-        display: none;
+        cursor: pointer; 
+
     }
 
     /* footer box */
@@ -3111,5 +3113,3 @@ animation: startMe 0.5s forwards;
     }
 
 }
-
-
