@@ -1360,7 +1360,7 @@ footer {
     letter-spacing: 0em;
     text-align: left;
     height: 22px;
-    width: 138px;
+    min-width: 128px;
     margin-right: 10px;
 }
 .footer__alux>a>img{
@@ -1438,7 +1438,7 @@ footer {
 
     h1 {
         height: 112px;
-        width: 609px;
+        min-width: 609px;
         font-size: 40px;
         font-weight: 600;
         line-height: 41px;
@@ -2075,7 +2075,6 @@ footer {
         /* bottom: -50px; */
     }
     .footer__alux>p{
-        margin-right: 15px;
         font-size: 14px;
     }
 }
@@ -2363,6 +2362,7 @@ animation: startMe 0.5s forwards;
 
     h1 {
         height: 102px;
+        max-width: 300px;
         width: 90%;
         font-size: 30px;
         font-weight: 600;
@@ -3109,7 +3109,9 @@ animation: startMe 0.5s forwards;
     .footer__alux>p{
         margin-right: 10px;
         font-size: 14px;
-        width: 113px;
+
     }
 
 }
+
+
