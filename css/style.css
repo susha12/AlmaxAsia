@@ -367,7 +367,7 @@ animation: startMenu 0.5s forwards;
 
 h1 {
     height: 122px;
-    width: 809px;
+    min-width: 809px;
     font-size: 50px;
     font-weight: 700;
     line-height: 61px;
@@ -1438,7 +1438,7 @@ footer {
 
     h1 {
         height: 112px;
-        min-width: 609px;
+        max-width: 609px;
         font-size: 40px;
         font-weight: 600;
         line-height: 41px;
@@ -2363,6 +2363,7 @@ animation: startMe 0.5s forwards;
     h1 {
         height: 102px;
         min-width: 300px;
+        max-width: 350px;
         width: 90%;
         font-size: 30px;
         font-weight: 600;
